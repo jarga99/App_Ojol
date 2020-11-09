@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { ImageBackground, Image, StyleSheet, View, Text, Dimensions } from 'react-native'
 import { FooterSplash, HeaderSplash, LogoSplash } from '../../assets';
+import { green, judul } from '../../utils/constan';
 
 const Splash = ({ navigation }) => {
 
@@ -53,11 +54,13 @@ const styles = StyleSheet.create({
     },
     nama: {
         fontSize: 55,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        color: judul
     },
     loading: {
         fontSize: 20,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        color: green
     },
     footer: {
         width: windowWidth,
