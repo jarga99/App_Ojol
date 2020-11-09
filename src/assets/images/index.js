@@ -5,7 +5,7 @@ import HeaderLogin from './headerLogin.png';
 import FooterLogin from './footerLogin.png';
 import HeaderSplash from './headerSplash.png';
 import FooterSplash from './footerSplash.png';
-import HeaderWelcome from './footerWelcome.png';
+import HeaderWelcome from './headerWelcome.png';
 import FooterWelcome from './footerWelcome.png';
 
 export {
