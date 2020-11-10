@@ -1,5 +1,5 @@
-import ButtomNavigator from './ButtonNavigator';
+import ButtonAksi from './ButtonAksi'
 
 export {
-    ButtomNavigator,
+    ButtonAksi
 }
