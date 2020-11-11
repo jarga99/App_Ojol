@@ -22,11 +22,13 @@ export default SliceButton
 const styles = StyleSheet.create({
 
     container: {
+        //styling untuk mengatur component deskripsi dan button
         alignItems: 'center',
         marginTop: windowHeight * 0.035
     },
 
     desc: {
+        //styling untuk mengatur deskripsi
         fontSize: windowWidth * 0.035,
         width: windowWidth * 0.5,
         color: txt_deskripsi,

@@ -21,13 +21,23 @@ export default ButtonAksi
 const styles = StyleSheet.create({
 
     btnComponent: {
+        //styling untuk button
         paddingVertical: windowHeight * 0.013,
         width: windowWidth * 0.6,
         backgroundColor: btn_deafult,
         borderRadius: 25,
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 2,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+        elevation: 5,
 
     },
     title: {
+        //styling untuk label button
         fontSize: 16,
         fontWeight: 'bold',
         color: putih,

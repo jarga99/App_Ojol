@@ -3,6 +3,7 @@ import { Dimensions, ImageBackground, Image, StyleSheet, Text, View } from 'reac
 import { FooterWelcome, HeaderWelcome, LogoWelcome } from '../../assets';
 import SliceButton from './SliceButton';
 import { judul, putih } from '../../utils/constan';
+import ButtonIcon from '../../components/ButtonIcon';
 
 const WelcomeAuth = ({ navigation }) => {
     const handleGoTo = (screen) => {
@@ -27,6 +28,26 @@ Jika belum punya akun"
                 />
             </ImageBackground>
             <ImageBackground source={FooterWelcome} style={styles.footer}>
+                <View style={styles.txtFooter}>
+                    <Text style={styles.labelAbout}>About US</Text>
+                    <Text style={styles.labelContact}>Contact US</Text>
+                </View>
+                <View style={styles.about}>
+                    <View style={styles.icon}>
+                        <ButtonIcon title="Instagram" />
+                        <ButtonIcon title="Facebook" />
+                        <ButtonIcon title="Youtube" />
+                    </View>
+                    <View style={styles.pembatas} >
+                        <ButtonIcon title="" />
+                    </View>
+
+                    <View style={styles.info} >
+                        <Text>WhatsApp : 082122223333</Text>
+                        <Text>Email : o_jol@ojol.id</Text>
+                        <Text>Telegram : @ojol_go</Text>
+                    </View>
+                </View>
             </ImageBackground>
 
         </View>
@@ -39,6 +60,7 @@ export default WelcomeAuth
 
 const styles = StyleSheet.create({
     container: {
+        //styling untuk mengatur page screen
         flex: 1,
         justifyContent: 'space-between',
         backgroundColor: putih,
@@ -64,6 +86,54 @@ const styles = StyleSheet.create({
     },
     footer: {
         width: windowWidth,
-        height: windowHeight * 0.2
+        height: windowHeight * 0.2,
+    },
+    txtFooter: {
+        flexDirection: 'row',
+        marginTop: windowHeight * 0.06,
+
+    },
+    labelAbout: {
+        justifyContent: 'space-between',
+        flex: 1,
+        fontSize: 18,
+        fontWeight: 'bold',
+        textAlign: 'center'
+
+    },
+    labelContact: {
+        justifyContent: 'space-between',
+        flex: 1,
+        fontSize: 18,
+        fontWeight: 'bold',
+        textAlign: 'center'
+    },
+    about: {
+        alignContent: 'center',
+        justifyContent: 'space-between',
+        flex: 1,
+        flexDirection: 'row',
+        borderRadius: 10
+    },
+    icon: {
+        justifyContent: 'space-between',
+        flex: 1,
+        marginHorizontal: windowWidth * 0.02,
+        alignItems: 'center',
+        flexDirection: 'row'
+    },
+    pembatas: {
+        justifyContent: 'space-between',
+        marginTop: 10,
+        alignItems: 'center',
+        marginHorizontal: windowWidth * 0.01
+    },
+    info: {
+        justifyContent: 'space-between',
+        flex: 1,
+        marginHorizontal: windowWidth * 0.01,
+        marginVertical: windowHeight * 0.015,
+        flexDirection: 'column',
+        alignItems: 'center'
     }
 })
